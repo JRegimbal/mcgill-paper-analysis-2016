@@ -44,30 +44,28 @@ The category system is also similar to that used by the Daily. Within the `<div 
 
 | Category | Articles | Percentage |
 | --- | --- | --- |
-| News | 174 | |
-| Culture | 91 | |
-| Commentary | 122 | |
-| Compendium | 22 | |
-| Sci-Tech | 39 | |
-| Sports | 1 | |
-| Features | 22 | |
-| Editorials | 3 | |
-| Uncategorized | 52 | |
-| --- | --- | --- |
+| News | 174 | 33.08% |
+| Culture | 91 | 17.30% |
+| Commentary | 122 | 23.19% |
+| Compendium | 22 | 4.18% |
+| Sci-Tech | 39 | 7.41% |
+| Sports | 1 | 0.19% |
+| Features | 22 | 4.18% |
+| Editorials | 3 | 0.57% |
+| Uncategorized | 52 | 9.89% |
 | Total | 526 | 100% |
 
 ### Le Délit
 
 | Category | Articles | Percentage |
 | --- | --- | --- |
-| Actualités | 154 | |
-| Culture | 131 | |
-| Société | 64 | |
-| Innovations | 31 | |
-| Éditorial | 19 | |
-| Chroniques | 17 | |
-| Entrevues | 14 | |
-| --- | --- | --- |
+| Actualités | 154 | 35.81% |
+| Culture | 131 | 30.47% |
+| Société | 64 | 14.9% |
+| Innovations | 31 | 7.21% |
+| Éditorial | 19 | 4.42% |
+| Chroniques | 17 | 3.95% |
+| Entrevues | 14 | 3.26% |
 | Total | 430 | 100% |
 
 
