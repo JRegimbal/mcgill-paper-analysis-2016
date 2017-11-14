@@ -1,8 +1,10 @@
 # McGill Independent Student Newspaper Analysis for 2016
 
+Note that this is still a work in progress. If any errors have been made, please notify me either by creating an issue or using the email address listed on my profile.
+
 ## Papers Examined
 
-The Daily, Le Délit, and the Tribune were all analyzed. Only text-based articles posted online were subject to review. Articles were collected en masse and filtered based on year of publication and category. Articles were collected using GNU wget 1.19.2 as follows.
+The Daily, Le Délit, and the Tribune were all analyzed. Only text-based articles posted online were subject to review. Other articles, including specials, were not examined. Articles were collected en masse and filtered based on year of publication and category. Articles were collected using GNU wget 1.19.2 as follows.
 
 ### The Daily
 
@@ -35,5 +37,37 @@ The list of files was generated similarly to the method used with the Daily. The
 The category system is also similar to that used by the Daily. Within the `<div class="sections intro subtitle">` tag are links to the main category and subcategories of the article. Subcategories were ignored here for simplicity. Again, a two part method was used using Python's `re` module. The first broadly selects the contents of this `<div>` tag using `<div class="sections intro subtitle">(.|\n)*?<a.+?>.+<\/a>(.|\n)*?<\/div>`. The second refines it down so that the category title has a buffer of one character before and 4 characters behind. This one is `>.+?<\/a>`.
 
 [Python Script for le Délit](categories-delit.py)
+
+## Totals and Breakdown by Category
+
+### The Daily
+
+| Category | Articles | Percentage |
+| --- | --- | --- |
+| News | 174 | |
+| Culture | 91 | |
+| Commentary | 122 | |
+| Compendium | 22 | |
+| Sci-Tech | 39 | |
+| Sports | 1 | |
+| Features | 22 | |
+| Editorials | 3 | |
+| Uncategorized | 52 | |
+| --- | --- | --- |
+| Total | 526 | 100% |
+
+### Le Délit
+
+| Category | Articles | Percentage |
+| --- | --- | --- |
+| Actualités | 154 | |
+| Culture | 131 | |
+| Société | 64 | |
+| Innovations | 31 | |
+| Éditorial | 19 | |
+| Chroniques | 17 | |
+| Entrevues | 14 | |
+| --- | --- | --- |
+| Total | 430 | 100% |
 
 
