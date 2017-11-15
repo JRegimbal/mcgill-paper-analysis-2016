@@ -48,12 +48,14 @@ for line in files:
 files.close()
 
 total = 0
+words = 0
 for category in categories:
     total += categories[category][0]
+    words += categories[category][1]
     if categories[category][0] is 0:
         avgwords = 0
     else:
         avgwords = int(categories[category][1]/categories[category][0])
     line = [str(category), str(categories[category][0]), str(avgwords)]
     print('{:>16} {:>8} {:>8}'.format(*line))
-print("\nTotal: "+str(total))
+print("\nTotal: "+str(total)+"\t"+str(int(words/(total-categories["uncategorized"][0]))))

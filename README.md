@@ -53,43 +53,49 @@ Article tags were used to determine if a certain article was published in 2016. 
 
 ### The Daily
 
-| Category | Articles | Percentage |
-| --- | --- | --- |
-| News | 174 | 33.08% |
-| Culture | 91 | 17.30% |
-| Commentary | 122 | 23.19% |
-| Compendium | 22 | 4.18% |
-| Sci-Tech | 39 | 7.41% |
-| Sports | 1 | 0.19% |
-| Features | 22 | 4.18% |
-| Editorials | 3 | 0.57% |
-| Uncategorized | 52 | 9.89% |
-| Total | 526 | 100% |
+| Category | Articles | Percentage | Average Length (words) |
+| --- | --- | --- | --- |
+| News | 174 | 33.08% | 922 |
+| Culture | 91 | 17.30% | 958 |
+| Commentary | 122 | 23.19% | 977 |
+| Compendium | 22 | 4.18% | 505 |
+| Sci-Tech | 39 | 7.41% | 1039 |
+| Sports | 1 | 0.19% | 953 |
+| Features | 22 | 4.18% | 2984 |
+| Editorials | 3 | 0.57% | 492 |
+| Uncategorized | 52 | 9.89% | N/A |
+| Total | 526 | 100% | 1002 |
 
 ### Le Délit
 
-| Category | Articles | Percentage |
-| --- | --- | --- |
-| Actualités | 154 | 35.81% |
-| Culture | 131 | 30.47% |
-| Société | 64 | 14.9% |
-| Innovations | 31 | 7.21% |
-| Éditorial | 19 | 4.42% |
-| Chroniques | 17 | 3.95% |
-| Entrevues | 14 | 3.26% |
-| Total | 430 | 100% |
+| Category | Articles | Percentage | Average Length (words) |
+| --- | --- | --- | --- |
+| Actualités | 154 | 35.81% | 649 |
+| Culture | 131 | 30.47% | 630 |
+| Société | 64 | 14.9% | 833 |
+| Innovations | 31 | 7.21% | 672 |
+| Éditorial | 19 | 4.42% | 617 |
+| Chroniques | 17 | 3.95% | 455 |
+| Entrevues | 14 | 3.26% | 1141 |
+| Total | 430 | 100% | 679 |
 
 ### The Tribune
 
-| Category | Articles | Percentage |
-| --- | --- | --- |
-| News | 145 | 18.61% |
-| Opinion | 140 | 17.97% |
-| Sports | 140 | 17.97% |
-| Sci-Tech | 92 | 11.81% |
-| Student Living | 103 | 13.22% |
-| Arts and Entertainment | 159 | 20.41% |
-| Total | 779 | 100% |
+| Category | Articles | Percentage | Average Length (words) |
+| --- | --- | --- | --- |
+| News | 145 | 18.61% | 714 |
+| Opinion | 140 | 17.97% | 436 |
+| Sports | 140 | 17.97% | 569 |
+| Sci-Tech | 92 | 11.81% | 651 |
+| Student Living | 103 | 13.22% | 592 |
+| Arts and Entertainment | 159 | 20.41% | 659 |
+| Total | 779 | 100% | 603 |
+
+### Note About Word Counts
+
+Word counts were determined by trying to identify the part of the HTML contained the article entry, filtering out HTML tags, special characters, etc. and then finding breaking up the resulting string by whitespace characters. Because of this, contractions like "it'll" or "l'article" are counted as one word and not two. This is probably has the most impact on le Délit.
+
+Uncategorized articles often couldn't have their word counts checked using the same method as categorized articles. These were simply omitted from the count, and the total average length was calculated using the number of *categorized* articles. The assumption is made that uncategorized articles have roughly the same length as uncategorized.
 
 ## Notes
 
