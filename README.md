@@ -95,6 +95,8 @@ Article tags were used to determine if a certain article was published in 2016. 
 
 Word counts were determined by trying to identify the part of the HTML contained the article entry, filtering out HTML tags, special characters, etc. and then finding breaking up the resulting string by whitespace characters. Because of this, contractions like "it'll" or "l'article" are counted as one word and not two. This is probably has the most impact on le Délit.
 
+The regex for filtering varied, but took the form `<.+?>|&.+?;|\\xa0`.
+
 Uncategorized articles often couldn't have their word counts checked using the same method as categorized articles. These were simply omitted from the count, and the total average length was calculated using the number of *categorized* articles. The assumption is made that uncategorized articles have roughly the same length as uncategorized.
 
 ## Notes
