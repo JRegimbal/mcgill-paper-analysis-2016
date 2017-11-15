@@ -91,3 +91,10 @@ Article tags were used to determine if a certain article was published in 2016. 
 | Arts and Entertainment | 159 | 20.41% |
 | Total | 779 | 100% |
 
+## Notes
+
+The regular expression syntax differs between GNU's find and Python's `re` module. `re` largely follows Perl regex syntax, while find uses emacs regex syntax. This is the reason for differences in escape characters.
+
+This project isn't meant to be definitive in any way, but give a general idea of what each of the newspapers produces. It is not intended for anything more.
+
+This is written in English so it can reach the entire McGill community. Ideally a French translation will be made once the content is mostly finalized.
