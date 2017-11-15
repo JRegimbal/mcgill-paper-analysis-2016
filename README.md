@@ -38,6 +38,17 @@ The category system is also similar to that used by the Daily. Within the `<div 
 
 [Python Script for le Délit](categories-delit.py)
 
+### The Tribune
+
+The list of articles was formed by first making a list of all articles in each category and then filtering by publication date. Category was extracted from the paths of articles published in 2016.
+
+The subfolders examined, which correspond to categories, were news, opinion, student-living, features, sci-tech, sports, student living, cartoons, and arts and entertainment (a-e). 
+The list was generated using `find . -regex './\(news\|opinion\|student\-living\|features\|sci\-tech\|a\-e\|sports\|cartoons\)/[a-zA-Z0-9\-]+/index\.html'`.
+
+Article tags were used to determine if a certain article was published in 2016. Specifically the regex was `article:published.+2016.+>`. For articles meeting this, the category was determined by passing the following regex on its path: `[a-z-]+`.
+
+[Python Script for the Tribune](categories-tribune.py)
+
 ## Totals and Breakdown by Category
 
 ### The Daily
@@ -68,4 +79,15 @@ The category system is also similar to that used by the Daily. Within the `<div 
 | Entrevues | 14 | 3.26% |
 | Total | 430 | 100% |
 
+### The Tribune
+
+| Category | Articles | Percentage |
+| --- | --- | --- |
+| News | 145 | 18.61% |
+| Opinion | 140 | 17.97% |
+| Sports | 140 | 17.97% |
+| Sci-Tech | 92 | 11.81% |
+| Student Living | 103 | 13.22% |
+| Arts and Entertainment | 159 | 20.41% |
+| Total | 779 | 100% |
 
